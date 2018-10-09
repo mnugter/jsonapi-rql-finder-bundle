@@ -7,39 +7,7 @@
     <services>
         <defaults autowire="true" autoconfigure="true" public="false" />
 
-        <service id="jsonapi.error.handler.event" class="Paknahad\JsonApiBundle\EventSubscriber\JsonApiErrorHandlerEvent">
-            <tag name="event_subscriber" />
-            <argument key="$environment">%kernel.environment%</argument>
-        </service>
-
-        <service id="jsonapi.request.event" class="Paknahad\JsonApiBundle\EventSubscriber\JsonApiEvent">
-            <tag name="event_subscriber" />
-        </service>
-
-        <service id="jsonapi.postman_collection_generator" class="Paknahad\JsonApiBundle\Collection\PostmanCollectionGenerator">
-            <argument type="service" id="maker.file_manager" />
-            <argument>%kernel.project_dir%</argument>
-        </service>
-
-        <service id="jsonapi.swagger_collection_generator" class="Paknahad\JsonApiBundle\Collection\SwaggerCollectionGenerator">
-            <argument type="service" id="maker.file_manager" />
-            <argument>%kernel.project_dir%</argument>
-        </service>
-
-        <service id="maker.maker.make_api" class="Paknahad\JsonApiBundle\Maker\ApiCrud">
-            <tag name="maker.command" />
-            <argument type="service" id="jsonapi.postman_collection_generator" />
-            <argument type="service" id="jsonapi.swagger_collection_generator" />
-            <argument type="service" id="maker.doctrine_helper" />
-        </service>
-
-        <service id="jsonapi.filter_handler" class="Paknahad\JsonApiBundle\Helper\Filter\Filter\FinderHandler" />
-
-        <service id="Paknahad\JsonApiBundle\Helper\Filter\FinderCollection">
-            <argument type="tagged" tag="paknahad.json_api.finder" />
-        </service>
-
-        <service class="Paknahad\JsonApiBundle\Helper\Filter\Finder" id="paknahad_json_api.helper_filter.finder">
+        <service class="Mnugter\JsonApiRqlFinderBundle\Finder\Rql" id="mnugter_json_api_rql_finder.finder.rql">
             <tag name="paknahad.json_api.finder" />
         </service>
     </services>

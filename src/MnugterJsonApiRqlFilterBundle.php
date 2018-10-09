@@ -1,12 +1,12 @@
 <?php
 
-namespace mnugter\JsonApiRqlFinderBundle;
+namespace Mnugter\JsonApiRqlFinderBundle;
 
-use mnugter\JsonApiRqlFinderBundle\DependencyInjection\JsonApiRqlFinderExtension;
+use Mnugter\JsonApiRqlFinderBundle\DependencyInjection\JsonApiRqlFinderExtension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class JsonApiRqlFilterBundle extends Bundle
+class MnugterJsonApiRqlFilterBundle extends Bundle
 {
     public function getContainerExtension()
     {

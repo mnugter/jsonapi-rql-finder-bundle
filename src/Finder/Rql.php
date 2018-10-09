@@ -1,6 +1,6 @@
 <?php
 
-namespace mnugter\JsonApiRqlFinderBundle\Finder;
+namespace Mnugter\JsonApiRqlFinderBundle\Finder;
 
 use AndreasGlaser\DoctrineRql\Factory\ORMVisitorFactory;
 use Paknahad\JsonApiBundle\Helper\Filter\FinderInterface;
