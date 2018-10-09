@@ -1,6 +1,6 @@
 {
     "description": "The jsonapi-bundle-rql-finder offers an RQL filter syntax for the paknahad/jsonapi-bundle bundle.",
-    "name": "mnugter/jsonapi-bundle-rql-finder",
+    "name": "mnugter/jsonapi-rql-finder-bundle",
     "type": "symfony-bundle",
     "license": "MIT",
     "keywords": ["json-api", "symfony", "php", "RESTful"],
