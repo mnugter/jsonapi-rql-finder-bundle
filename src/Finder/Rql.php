@@ -3,7 +3,9 @@
 namespace Mnugter\JsonApiRqlFinderBundle\Finder;
 
 use AndreasGlaser\DoctrineRql\Factory\ORMVisitorFactory;
+use Doctrine\ORM\QueryBuilder;
 use Paknahad\JsonApiBundle\Helper\Filter\FinderInterface;
+use Symfony\Component\HttpFoundation\Request;
 
 class Rql implements FinderInterface
 {
