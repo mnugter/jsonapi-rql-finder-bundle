@@ -12,9 +12,11 @@
     ],
     "require": {
         "php": "^7.2",
-        "paknahad/jsonapi-bundle": "^1.1",
+        "paknahad/jsonapi-bundle": "^1.1 | dev-master",
         "andreas-glaser/doctrine-rql": "^0.2"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "config": {
         "preferred-install": {
             "*": "dist"
