@@ -4,6 +4,7 @@ namespace Mnugter\JsonApiRqlFinderBundle\Finder;
 
 use AndreasGlaser\DoctrineRql\Factory\ORMVisitorFactory;
 use Doctrine\ORM\QueryBuilder;
+use Paknahad\JsonApiBundle\Helper\FieldManager;
 use Paknahad\JsonApiBundle\Helper\Filter\FinderInterface;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -20,27 +21,33 @@ class Rql implements FinderInterface
     protected $query;
 
     /**
-     * Set request object.
-     *
-     * @param \Symfony\Component\HttpFoundation\Request $request
+     * {@inheritdoc}
      */
-    public function setRequest(Request $request) {
+    public function setRequest(Request $request): void
+    {
         $this->request = $request;
     }
 
     /**
-     * Set service entity repository and configure the finder based on the passed repository.
-     *
-     * @param \Doctrine\ORM\QueryBuilder $query
+     * {@inheritdoc}
      */
-    public function setQuery(QueryBuilder $query) {
+    public function setQuery(QueryBuilder $query): void
+    {
         $this->query = $query;
     }
 
     /**
-     * @throws EntityNotFoundException
+     * {@inheritdoc}
      */
-    public function filterQuery() {
+    public function setFieldManager(FieldManager $fieldManager): void
+    {
+
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function filterQuery(): void {
         $rql = $this->request->get('rql');
 
         ORMVisitorFactory::appendFiltersOnly($this->query, $rql);
