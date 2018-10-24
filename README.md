@@ -1,7 +1,7 @@
 # jsonapi-bundle-rql-finder
-An RQL Finder for paknahad/jsonapi-bundle.
+An RQL Finder for [paknahad/jsonapi-bundle][1].
 
-This package is only a link between and paknahad/jsonapi-bundle andreas-glaser/doctrine-rql
+This package is only a link between and [paknahad/jsonapi-bundle][1] [andreas-glaser/doctrine-rql][2]
 
 # Installation
 
@@ -18,3 +18,6 @@ http://localhost/api/yourendpoint?rql=RQL string.
 ```
 
 See https://github.com/xiag-ag/rql-parser/ for documentation on the RQL string.
+
+[1]: https://github.com/paknahad/jsonapi-bundle
+[2]: https://github.com/andreas-glaser/doctrine-rql
