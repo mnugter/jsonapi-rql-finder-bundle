@@ -12,7 +12,7 @@
     ],
     "require": {
         "php": "^7.2",
-        "paknahad/jsonapi-bundle": "^1.1 | dev-master",
+        "paknahad/jsonapi-bundle": "^2.0 | dev-master",
         "andreas-glaser/doctrine-rql": "^0.2"
     },
     "minimum-stability": "dev",
