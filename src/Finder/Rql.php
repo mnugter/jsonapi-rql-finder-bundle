@@ -52,4 +52,11 @@ class Rql implements FinderInterface
 
         ORMVisitorFactory::appendFiltersOnly($this->query, $rql);
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function sortQuery(): void
+    {
+    }
 }
