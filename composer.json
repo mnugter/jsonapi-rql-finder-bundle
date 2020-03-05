@@ -12,8 +12,8 @@
     ],
     "require": {
         "php": "^7.1",
-        "paknahad/jsonapi-bundle": ">=1.1",
-        "andreas-glaser/doctrine-rql": "^0.2"
+        "paknahad/jsonapi-bundle": "^3.0",
+        "andreas-glaser/doctrine-rql": "^0.3"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

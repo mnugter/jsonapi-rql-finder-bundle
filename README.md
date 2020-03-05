@@ -1,3 +1,5 @@
+![https://packagist.org/packages/mnugter/jsonapi-rql-finder-bundle](https://img.shields.io/packagist/dt/mnugter/jsonapi-rql-finder-bundle)
+![https://github.com/mnugter/jsonapi-rql-finder-bundle](https://img.shields.io/github/license/mnugter/jsonapi-rql-finder-bundle)
 # jsonapi-bundle-rql-finder
 An RQL Finder for [paknahad/jsonapi-bundle][1].
 
