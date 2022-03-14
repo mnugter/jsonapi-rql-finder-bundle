@@ -61,11 +61,4 @@ class Rql implements FinderInterface
     public function sortQuery(): void
     {
     }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function sortQuery(): void
-    {
-    }
 }
